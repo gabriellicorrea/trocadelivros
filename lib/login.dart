@@ -12,9 +12,18 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: ListView(padding: EdgeInsets.zero, children: <Widget>[
+          DrawerHeader(
+            child: Text('Troca de Livros'),
+            decoration: BoxDecoration(
+              color: Colors.blue[200],
+            ),
+          ),
+        ]),
+      ),
       appBar: AppBar(
-        title: Text("Widget TextField"),
+        title: Text("Troca de Livros"),
       ),
       body: Container(
         color: Colors.white,
