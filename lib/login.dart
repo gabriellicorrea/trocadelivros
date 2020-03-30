@@ -12,6 +12,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(),
       appBar: AppBar(
         title: Text("Widget TextField"),
       ),
@@ -56,7 +57,6 @@ class _LoginState extends State<Login> {
             },
           );
         },
-        
         child: Icon(Icons.check),
       ),
     );
