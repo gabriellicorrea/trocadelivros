@@ -142,7 +142,7 @@ class _LoginState extends State<Login> {
                 alignment: Alignment.centerRight,
                 child: FlatButton(
                   child: Text(
-                    "Recuperar Senha",
+                    "Recuperar Senha.",
                     textAlign: TextAlign.right,
                   ),
                   onPressed: () {},
