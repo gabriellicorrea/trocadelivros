@@ -37,7 +37,7 @@ class _LoginState extends State<Login> {
       keyboardType: TextInputType.text,
       decoration: InputDecoration(
         prefixIcon: Icon(Icons.lock_outline),
-        hintText: "Password",
+        hintText: "senha",
         labelStyle: TextStyle(color: Colors.black),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
       ),
