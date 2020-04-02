@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:trocadelivros/resetpassword.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -76,7 +77,14 @@ class _LoginState extends State<Login> {
                 ),
               ],
             ),
-            onPressed: () => {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Login(),
+                ),
+              );
+            },
           ),
         ),
       ),
@@ -145,7 +153,14 @@ class _LoginState extends State<Login> {
                     "Recuperar Senha",
                     textAlign: TextAlign.right,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ResetPasswordPage(),
+                      ),
+                    );
+                  },
                 ),
               ),
               SizedBox(
