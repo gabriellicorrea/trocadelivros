@@ -98,7 +98,7 @@ class _LoginState extends State<Login> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text(
-                  "Login com Facebook",
+                  "Login com Facebook.",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
