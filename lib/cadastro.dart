@@ -121,7 +121,16 @@ class Cadastro extends StatelessWidget {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    return showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          content: Text("Usuario cadastrado com sucesso!"),
+                        );
+                      },
+                    );
+                  },
                 ),
               ),
             ),

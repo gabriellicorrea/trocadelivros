@@ -92,7 +92,16 @@ class ResetPasswordPage extends StatelessWidget {
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              return showDialog(
+                                context: context,
+                                builder: (context) {
+                                  return AlertDialog(
+                                    content: Text("Email Enviado"),
+                                  );
+                                },
+                              );
+                            },
                           ),
                         ),
                       ),
