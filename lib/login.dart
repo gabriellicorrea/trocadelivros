@@ -186,7 +186,7 @@ class _LoginState extends State<Login> {
               ),
               fbLogin,
               SizedBox(
-                height: 30,
+                height: 10,
               ),
               Container(
                 child: FlatButton(
