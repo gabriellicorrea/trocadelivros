@@ -24,10 +24,16 @@ class _LoginState extends State<Login> {
       decoration: InputDecoration(
         prefixIcon: Icon(
           Icons.person,
+          color: Colors.black,
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.black),
+          borderRadius: BorderRadius.circular(30),
         ),
         hintText: "Email",
-        labelStyle: TextStyle(color: Colors.red),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(30),
+        ),
       ),
       controller: textFieldEmailUsuario,
     );
@@ -37,7 +43,14 @@ class _LoginState extends State<Login> {
       obscureText: true,
       keyboardType: TextInputType.text,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.lock_outline),
+        prefixIcon: Icon(
+          Icons.lock_outline,
+          color: Colors.black,
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.black),
+          borderRadius: BorderRadius.circular(30),
+        ),
         hintText: "Password",
         labelStyle: TextStyle(color: Colors.black),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
@@ -50,7 +63,7 @@ class _LoginState extends State<Login> {
         height: 60,
         alignment: Alignment.centerLeft,
         decoration: BoxDecoration(
-          color: Colors.cyan,
+          color: Colors.black,
           borderRadius: BorderRadius.all(
             Radius.circular(10),
           ),
@@ -70,7 +83,7 @@ class _LoginState extends State<Login> {
                 ),
                 Container(
                   child: SizedBox(
-                    child: Image.asset("imagens/icon.jpg"),
+                    child: Image.asset("imagens/livro.png"),
                     height: 28,
                     width: 28,
                   ),
@@ -139,9 +152,9 @@ class _LoginState extends State<Login> {
               SizedBox(
                 height: 128,
                 width: 128,
-                child: Image.asset("imagens/person.png", fit: BoxFit.contain),
+                child: Image.asset("imagens/livro.png", fit: BoxFit.contain),
               ),
-              SizedBox(height: 40),
+              SizedBox(height: 10),
               emailField,
               SizedBox(height: 20),
               senhaField,

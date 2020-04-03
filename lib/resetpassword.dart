@@ -8,13 +8,13 @@ class ResetPasswordPage extends StatelessWidget {
         backgroundColor: Colors.white,
         automaticallyImplyLeading: true,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: Icon(Icons.home),
           color: Colors.black38,
           onPressed: () => Navigator.pop(context, false),
         ),
       ),
       body: Container(
-        padding: EdgeInsets.only(top: 60, left: 40, right: 40),
+        padding: EdgeInsets.only(top: 50, left: 40, right: 40),
         color: Colors.white,
         child: ListView(
           children: <Widget>[
@@ -27,7 +27,7 @@ class ResetPasswordPage extends StatelessWidget {
                       SizedBox(
                         width: 200,
                         height: 200,
-                        child: Image.asset("assets/reset-password-icon.png"),
+                        child: Image.asset("imagens/cadeado.jpg"),
                       ),
                       SizedBox(
                         height: 20,
@@ -35,7 +35,7 @@ class ResetPasswordPage extends StatelessWidget {
                       Text(
                         "Esqueceu sua senha?",
                         style: TextStyle(
-                          fontSize: 32,
+                          fontSize: 22,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -43,9 +43,9 @@ class ResetPasswordPage extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        "Por favor, informe o E-mail associado a sua conta que enviaremos um link para o mesmo com as instruções para restauração de sua senha.",
+                        "Por favor, informe o E-mail cadastrado que enviaremos um link com as instruções para restauração de sua senha.",
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 15,
                           fontWeight: FontWeight.w400,
                         ),
                         textAlign: TextAlign.center,
@@ -76,15 +76,7 @@ class ResetPasswordPage extends StatelessWidget {
                         height: 60,
                         alignment: Alignment.centerLeft,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            stops: [0.3, 1],
-                            colors: [
-                              Color(0xFFF58524),
-                              Color(0XFFF92B7F),
-                            ],
-                          ),
+                          color: Colors.black,
                           borderRadius: BorderRadius.all(
                             Radius.circular(5),
                           ),

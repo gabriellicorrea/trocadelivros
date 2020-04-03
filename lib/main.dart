@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:trocadelivros/login.dart';
 
+import 'cadastro.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -9,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tela de Login',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Login(),
+      home: Cadastro(),
     );
   }
 }
