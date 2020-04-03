@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:trocadelivros/cadastro.dart';
 import 'package:trocadelivros/resetpassword.dart';
 
 class Login extends StatefulWidget {
@@ -193,7 +194,14 @@ class _LoginState extends State<Login> {
                     "Cadastre-se",
                     textAlign: TextAlign.center,
                   ),
-                  onPressed: () => {},
+                  onPressed: () => {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Cadastro(),
+                      ),
+                    ),
+                  },
                 ),
               ),
             ],
